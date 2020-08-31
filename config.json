@@ -1,11 +1,14 @@
 {
   "database": {
-    "uri": "mongodb://localhost/adserver",
+    "uri": "mongodb://localhost:27017/adserver",
     "options": {
       "useNewUrlParser": true,
       "useUnifiedTopology": true,
       "useCreateIndex": true,
-      "useFindAndModify": false
+      "useFindAndModify": false,
+      "user": "admin",
+      "pass": "1q2w3e4r",
+      "auth": { "authSource": "admin" }
     }
   }
 }

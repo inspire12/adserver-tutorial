@@ -187,6 +187,15 @@ router.get("/redirect", async function(req, res) {
 
 *이 광고 서버는 데이터베이스 MongoDB를 사용하고 있습니다*  
 *시작하기 전 MongoDB가 Localhost에 설치되어 있는지 확인해주세요!*
+*MongoDB 도커로 설치*
+```bash 
+docker run -d --name mongo_ad
+       -e MONGO_INITDB_ROOT_USERNAME=admin
+       -e MONGO_INITDB_ROOT_PASSWORD=1q2w3e4r
+       -e MONGODB_DATABASE=adserver
+       -p 27017:27017
+       mongo --auth
+```
 
 ```bash
 $ git clone https://github.com/kijepark/adserver-tutorial.git
